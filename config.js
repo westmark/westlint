@@ -15,6 +15,7 @@ module.exports = function ( nodeModules ) {
     },
     parser: 'babel-eslint',
     plugins: [
+      'jest',
       'react',
     ],
     env: {
