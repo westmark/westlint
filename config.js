@@ -14,6 +14,9 @@ module.exports = function ( nodeModules ) {
       },
     },
     parser: 'babel-eslint',
+    ecmaFeatures: {
+      classes: true,
+    },
     plugins: [
       'jest',
       'react',
