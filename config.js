@@ -72,7 +72,15 @@ module.exports = function ( nodeModules ) {
       ],
       'react/jsx-curly-spacing': [
         1,
-        'always',
+        {
+	        when: 'always',
+          allowMultiline: true,
+          attributes: true,
+          children: true,
+          spacing: {
+            objectLiterals: 'always',
+          },
+        },
       ],
       'react/jsx-filename-extension': 0,
       'react/no-unused-prop-types': [ 1, { skipShapeProps: true } ],
