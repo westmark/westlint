@@ -44,16 +44,30 @@ module.exports = function ( nodeModules ) {
         2,
         'always',
       ],
+      'no-mixed-operators': 0,
       'jsx-a11y/no-static-element-interactions': 0,
+
+      "jsx-a11y/anchor-is-valid": [ "error", {
+        "components": [ "Link" ],
+        "specialLink": [ "to" ]
+      }],
+
       'import/extensions': 0,
       'import/prefer-default-export': 0,
       'import/no-unresolved': 0,
       'max-len': 0,
       'no-debugger': 1,
-      'no-unused-vars': 1,
+      'no-unused-vars': [
+        1,
+        {
+          "vars": "all",
+          "args": "none",
+          "ignoreRestSiblings": true
+        }
+      ],
       'prefer-const': [ 2, {
           'ignoreReadBeforeAssign': true,
-	},
+        },
       ],
       'space-before-blocks': [
         1,
@@ -72,11 +86,21 @@ module.exports = function ( nodeModules ) {
       ],
       'react/jsx-curly-spacing': [
         1,
-        'always',
+        {
+          when: 'always',
+          allowMultiline: true,
+          attributes: true,
+          children: true,
+          spacing: {
+            objectLiterals: 'always',
+          },
+        },
       ],
+      'react/no-typos': 0,
+      'react/no-did-mount-set-state': 0,
       'react/jsx-filename-extension': 0,
       'react/no-unused-prop-types': [ 1, { skipShapeProps: true } ],
       'react/jsx-indent': 0,
     },
-  };
+  }
 };
