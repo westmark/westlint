@@ -1,19 +1,10 @@
+const prettier = require('./prettier');
+
 module.exports = {
   extends: ['airbnb', 'prettier', 'prettier/react'],
   plugins: ['prettier', 'jest'],
   rules: {
-    'prettier/prettier': [
-      'error',
-      {
-        parser: 'babylon',
-        bracketSpacing: true,
-        printWidth: 100,
-        semi: true,
-        singleQuote: true,
-        trailingComma: 'all',
-        arrowParens: 'always',
-      },
-    ],
+    'prettier/prettier': ['error', prettier],
     // React
     'react/jsx-filename-extension': 0,
     'react/destructuring-assignment': 0,
