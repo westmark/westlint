@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-westlint",
-  "version": "2.1.4",
+  "version": "3.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,17 +9,17 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "babel-eslint": "10.0.1",
-    "eslint": "5.16.0",
-    "eslint-config-airbnb": "17.1.0",
-    "eslint-config-prettier": "4.1.0",
-    "eslint-import-resolver-webpack": "0.11.0",
-    "eslint-plugin-import": "2.16.0",
-    "eslint-plugin-jest": "22.4.1",
-    "eslint-plugin-jsx-a11y": "6.2.1",
-    "eslint-plugin-prettier": "3.0.1",
-    "eslint-plugin-react": "7.12.4",
-    "prettier": "1.16.4"
+    "babel-eslint": "10.0.3",
+    "eslint": "6.5.1",
+    "eslint-config-airbnb": "18.0.1",
+    "eslint-config-prettier": "6.4.0",
+    "eslint-import-resolver-webpack": "0.11.1",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-jest": "22.17.0",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-prettier": "3.1.1",
+    "eslint-plugin-react": "7.16.0",
+    "prettier": "1.18.2"
   },
   "eslintConfig": {
     "extends": "./index.js"
