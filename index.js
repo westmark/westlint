@@ -8,6 +8,7 @@ module.exports = {
     // React
     'react/jsx-filename-extension': 0,
     'react/destructuring-assignment': 0,
+    'react/jsx-props-no-spreading': 0,
 
     'import/prefer-default-export': 0,
 
