@@ -1,9 +1,9 @@
 module.exports = {
-  parser: "babylon",
+  parser: 'babylon',
   bracketSpacing: true,
   printWidth: 100,
   semi: true,
   singleQuote: true,
-  trailingComma: "all",
-  arrowParens: "always"
+  trailingComma: 'all',
+  arrowParens: 'always',
 };
